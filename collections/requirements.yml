@@ -1,7 +1,0 @@
-collections:
-  # Install a collection from local Automation Hub
-  - name: acidonpe.testing
-    version: 1.0.1
-    source: https://192.168.122.172/api/galaxy/content/published/
-  - name: community.general
-    source: https://galaxy.ansible.com/
