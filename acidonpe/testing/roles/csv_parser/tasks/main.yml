@@ -1,0 +1,11 @@
+---
+# tasks file for csv_parser
+
+- name: Read users from CSV file and return a dictionary
+  read_csv:
+    path: '{{ csv_file }}'
+  register: users
+
+- debug:
+    msg: "Read user - {{ item }}"
+  loop: '{{ users.list | acidonpe.testing.list_split(7) }}'
